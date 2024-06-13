@@ -1,0 +1,20 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+.light-blue {
+    background-color: hsl(206, 94%, 87%);
+}
+.white{
+    background-color:hsl(0, 0%, 100%);
+}
+.img-set {
+    background: url(./images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box-round {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
