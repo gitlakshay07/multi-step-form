@@ -7,6 +7,9 @@
 .white{
     background-color:hsl(0, 0%, 100%);
 }
+.light-gray {
+    color: hsl(231, 11%, 63%);
+}
 .img-set {
     background: url(./images/bg-sidebar-desktop.svg);
     background-size: cover;
@@ -14,7 +17,7 @@
     background-repeat: no-repeat;
 }
 .box-round {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: #fff;
 }
