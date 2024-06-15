@@ -13,64 +13,152 @@
 <body>
     <div class="light-blue">
         <div class="container mx-auto px-3 w-screen h-screen flex justify-center items-center">
-            <div class="lg:w-9/12 sm:11/12 md:w-11/12 h-4/5 white rounded-2xl p-4 grid sm:grid-cols-3">
-               <div class="img-set h-full rounded-2xl px-3 py-6 col-span-1">
-                <div class="p-5 flex flex-col gap-7">
+            <div class="h-full lg:w-9/12 sm:w-11/12 md:w-11/12 sm:h-4/5 white rounded-2xl sm:p-4 grid sm:grid-cols-3 ">
+               <div class="img-set bg-cover bg-bottom sm:bg-cover sm:bg-center sm:bg-no-repeat sm:h-full w-full xl:w-10/12  sm:rounded-2xl px-3 py-6 sm:col-span-1 ">
+                <div class="p-5 flex sm:flex-col sm:gap-7 justify-center">
                     <div class="flex gap-5 place-items-center">
                         <div class="box-round text-center flex items-center justify-center border rounded-full "><span class="text-sm">1</span></div>
                         <div class="flex flex-col justify-center text-slate-200 ">
-                          <span class="text-xs font-light text-slate-300">STEP 1</span>
-                          <span class="text-sm font-medium text-slate-200">YOUR INFO</span>
+                          <span class="text-xs font-light text-slate-300 hidden sm:block">STEP 1</span>
+                          <span class="text-sm font-medium text-slate-200 hidden sm:block">YOUR INFO</span>
                         </div>
                     </div> 
                     <div class="flex gap-5 place-items-center">
                         <div class="box-round text-center flex items-center justify-center border rounded-full "><span class="text-sm">2</span></div>
                         <div class="flex flex-col justify-center text-slate-200 ">
-                          <span class="text-xs font-light text-slate-300">STEP 2</span>
-                          <span class="text-sm font-medium text-slate-200">SELECT PLAN</span>
+                          <span class="text-xs font-light text-slate-300 hidden sm:block">STEP 2</span>
+                          <span class="text-sm font-medium text-slate-200 hidden sm:block ">SELECT PLAN</span>
                         </div>
                     </div> 
                     <div class="flex gap-5 place-items-center">
                         <div class="box-round text-center flex items-center justify-center border rounded-full "><span class="text-sm">3</span></div>
                         <div class="flex flex-col justify-center text-slate-200 ">
-                          <span class="text-xs font-light text-slate-300">STEP 3</span>
-                          <span class="text-sm font-medium text-slate-200">ADD-ONS</span>
+                          <span class="text-xs font-light text-slate-300 hidden sm:block">STEP 3</span>
+                          <span class="text-sm font-medium text-slate-200 hidden sm:block">ADD-ONS</span>
                         </div>
                     </div> 
                     <div class="flex gap-5 place-items-center">
                         <div class="box-round text-center flex items-center justify-center border rounded-full "><span class="text-sm">4</span></div>
                         <div class="flex flex-col justify-center text-slate-200 ">
-                          <span class="text-xs font-light text-slate-300">STEP 4</span>
-                          <span class="text-sm font-medium text-slate-200">SUMMARY</span>
+                          <span class="text-xs font-light text-slate-300 hidden sm:block">STEP 4</span>
+                          <span class="text-sm font-medium text-slate-200 hidden sm:block">SUMMARY</span>
                         </div>
                     </div> 
                 </div>
                </div>
-               <div class="col-span-2 px-7 flex justify-center ">
+               <div class="sm:col-span-2 px-7 flex justify-center">
                   <div class="flex flex-col place-content-between	">
-                   <div class="">
+                   <!-- <div class="Personal-info">
                     <div class="pt-10 flex gap-2 flex-col">
-                      <h1 class="text-3xl font-medium">Personal Info</h1>
+                      <h1 class="text-3xl font-medium f-marine-blue">Personal Info</h1>
                       <p class="text-base light-gray">Please provide your name, email address and phone number.</p>
                     </div>
                     <div class="pt-6 flex flex-col gap-5">
                       <div class="flex flex-col gap-1">
-                        <label for="name" class="text-sm">Name</label>
+                        <label for="name" class="text-sm  f-marine-blue">Name</label>
                         <input type="text" class="border rounded-md px-5 py-2" id="name" name="name" placeholder="eg. Stephen King">
                       </div>
                       <div class="flex flex-col gap-1">
-                        <label for="email" class="text-sm">Email Address</label>
+                        <label for="email" class="text-sm f-marine-blue">Email Address</label>
                         <input type="email" class="border rounded-md px-5 py-2" id="email" name="email" placeholder="eg. StephenKing@lorem.com">
                       </div>
                       <div class="flex flex-col gap-1">
-                        <label for="phone-no" class="text-sm">Phone Number</label>
+                        <label for="phone-no" class="text-sm  f-marine-blue">Phone Number</label>
                         <input type="tel" class="border rounded-md px-5 py-2" id="phone-no" name="phone-no" placeholder="eg. 1234567890">
                       </div>
                     </div>
+                   </div> -->
+
+                   <!-- <div class="plans">
+                      <div class="pt-10 flex gap-2 flex-col">
+                        <h1 class="text-2xl sm:text-3xl font-medium f-marine-blue">Select your plan</h1>
+                        <p class="text-base light-gray">You have the option of monthly or yearly billing.</p>
+                      </div>
+                      <div class="pt-8 flex flex-col sm:flex-row gap-5">
+                        <div class="border rounded-md w-full sm:w-32 h-20 sm:h-40 flex sm:flex-col gap-4  sm:place-content-between p-3 cursor-pointer">
+                          <div class="my-auto sm:my-0 pb-2 sm:pb-0"><img src="./images/icon-arcade.svg" alt="arcades"></div>
+                          <div class="flex flex-col">
+                            <h2 class="f-marine-blue">Arcade</h2>
+                            <span class="font-extralight text-sm light-gray">$90/yr</span>
+                            <span class="text-xs f-marine-blue hidden sm:block">2 months free</span>
+                          </div>
+                        </div>
+                        <div class="border rounded-md w-full sm:w-32 h-20 sm:h-40 flex sm:flex-col gap-4 sm:place-content-between p-3 cursor-pointer">
+                          <div class="my-auto pb-2 sm:my-0 sm:pb-0"><img src="./images/icon-advanced.svg" alt="Advanced"></div>
+                          <div class="flex flex-col">
+                            <h2 class="f-marine-blue">Advanced</h2>
+                            <span class="font-extralight text-sm light-gray">$120/yr</span>
+                            <span class="text-xs f-marine-blue hidden sm:block">2 months free</span>
+                          </div>
+                        </div>
+                        <div class="border rounded-md w-full sm:w-32 h-20 sm:h-40 flex sm:flex-col gap-4 sm:place-content-between p-3 cursor-pointer">
+                          <div class="my-auto pb-2 sm:my-0  sm:pb-0"><img src="./images/icon-pro.svg" alt="pro"></div>
+                          <div class="flex flex-col">
+                            <h2 class="f-marine-blue">Pro</h2>
+                            <span class="font-extralight text-sm light-gray">$150/yr</span>
+                            <span class="text-xs f-marine-blue hidden sm:block">2 months free</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-full bg-light-gray rounded mt-8 p-3 flex justify-center">
+                       <div class="flex place-content-center gap-5">
+                        <span class="text-sm light-gray">Monthly</span>
+                        <label class="inline-flex items-center cursor-pointer">
+                          <input type="checkbox" value="" class="sr-only peer">
+                          <div class="relative w-11 h-6  peer-focus:outline-none peer-focus:ring-1 peer-focus:ring-blue-300  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div> </label>
+                        <span class="text-sm f-marine-blue">Yearly</span>
+                       </div>
+                      </div>
+                   </div> -->
+ 
+                   <div class="add-ons lg:w-full ">
+                    <div class="pt-10 flex gap-2 flex-col md:me-10 lg:me-24">
+                      <h1 class="text-2xl sm:text-3xl font-medium f-marine-blue">Pick add-ons</h1>
+                      <p class="text-base light-gray">Add-ons help enhancing your gaming experience.</p>
+                    </div>
+                    <div class="mt-8 flex flex-col gap-4">
+                      <div class="sm:w-full sm:h-20 border rounded-md p-5 flex justify-between">
+                        <div class="flex gap-6">
+                          <input type="checkbox"  class="" name="online-services">
+                          <div class="flex flex-col">
+                            <h2 class="text-sm font-medium f-marine-blue">Online service</h2>
+                            <span class="text-xs font-light light-gray">Access to multiplyer games</span>
+                          </div>
+                        </div>
+                        <div class="place-self-center">
+                          <span class="f-purple text-sm">+$1/mo</span>
+                        </div>
+                      </div>
+                      <div class="sm:w-full sm:h-20 border rounded-md p-5 flex justify-between">
+                        <div class="flex gap-6">
+                          <input type="checkbox"  class="" name="online-services">
+                          <div class="flex flex-col">
+                            <h2 class="text-sm font-medium f-marine-blue">Large storage</h2>
+                            <span class="text-xs font-light light-gray">Extra 1TB of cloud save</span>
+                          </div>
+                        </div>
+                        <div class="place-self-center">
+                          <span class="f-purple text-sm">+$1/mo</span>
+                        </div>
+                      </div>
+                      <div class="sm:w-full sm:h-20 border rounded-md p-5 flex justify-between">
+                        <div class="flex gap-6">
+                          <input type="checkbox"  class="" name="online-services">
+                          <div class="flex flex-col">
+                            <h2 class="text-sm font-medium f-marine-blue">Customizable profile</h2>
+                            <span class="text-xs font-light light-gray">Custom theme on your profile</span>
+                          </div>
+                        </div>
+                        <div class="place-self-center">
+                          <span class="f-purple text-sm">+$1/mo</span>
+                        </div>
+                      </div>
+                    </div>
                    </div>
-                    <div class="flex pb-4 place-content-end">
+
+                   <div class="flex pb-4 place-content-end">
                       <div class="">
-                        <button class="light-blue font-medium px-6 py-3 rounded-md">Next Step</button>
+                        <button class="marine-blue f-light-blue font-medium px-6 py-3 rounded-md">Next Step</button>
                       </div>
                     </div>
                   </div>

@@ -7,13 +7,26 @@
 .white{
     background-color:hsl(0, 0%, 100%);
 }
+.marine-blue {
+    background-color: hsl(213, 96%, 18%);
+}
+.f-marine-blue {
+    color: hsl(213, 96%, 18%);
+}
+.f-light-blue{
+    color: hsl(206, 94%, 87%);
+}
 .light-gray {
     color: hsl(231, 11%, 63%);
 }
+.bg-light-gray {
+    background-color: hsl(231, 100%, 99%);
+}
+.f-purple {
+    color: hsl(243, 100%, 62%);
+}
 .img-set {
     background: url(./images/bg-sidebar-desktop.svg);
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 .box-round {
